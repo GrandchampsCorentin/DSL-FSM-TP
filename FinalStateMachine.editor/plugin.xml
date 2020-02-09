@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated finalStateMachine -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="finalStateMachine.presentation.FinalStateMachineModelWizardID"
+            name="%_UI_FinalStateMachineModelWizard_label"
+            class="finalStateMachine.presentation.FinalStateMachineModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/FinalStateMachineModelFile.gif">
+         <description>%_UI_FinalStateMachineModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated finalStateMachine -->
+      <editor
+            id="finalStateMachine.presentation.FinalStateMachineEditorID"
+            name="%_UI_FinalStateMachineEditor_label"
+            icon="icons/full/obj16/FinalStateMachineModelFile.gif"
+            extensions="finalstatemachine"
+            class="finalStateMachine.presentation.FinalStateMachineEditor"
+            contributorClass="finalStateMachine.presentation.FinalStateMachineActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
